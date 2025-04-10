@@ -72,7 +72,7 @@ testMapdisplay() {
 # Test 9: Too small size maze
 testToosmallSizemaze() {
   echo "Test 9"
-  ./maze bad_maze.txt 2> "$OUTPUT"
+  ./maze text9.txt 2> "$OUTPUT"
   grep -q "size error" "$OUTPUT" && echo "success" || echo "fail"
 }
 
